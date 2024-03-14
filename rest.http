@@ -1,0 +1,53 @@
+### post a registration
+POST http://localhost:3000/registration
+Content-Type: application/json
+
+{
+    "fname": "Sam",
+    "mname": "Ybanez",
+    "lname": "Casagnap",
+    "address": "Manolo",
+    "birthday": "2002-01-09",
+    "age": 22
+
+}
+
+### get registration
+GET http://localhost:3000/registration
+
+
+### get registration / findById
+GET http://localhost:3000/registration/65f2a9612066d0ddbba05964
+
+
+###patch by ID
+PATCH http://localhost:3000/registration/65f2b0900017e75d944c1faf
+Content-Type: application/json
+
+
+{
+    "age": 15
+}
+
+
+### delete registration / findByIdAndDelete
+DELETE http://localhost:3000/registration/65f2b05d0017e75d944c1fad
+
+
+
+
+
+
+
+
+### post a reservation
+POST http://localhost:3000/reservation
+Content-Type: application/json
+
+{
+    "checkIn": "2024-03-12",
+    "checkOut": "2024-03-15",
+    "numberOfGuest": 23,
+    "reservationName": "Sam Birthday",
+    "phoneNumber": 0933333333
+}
