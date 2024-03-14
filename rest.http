@@ -49,5 +49,25 @@ Content-Type: application/json
     "checkOut": "2024-03-15",
     "numberOfGuest": 23,
     "reservationName": "Sam Birthday",
-    "phoneNumber": 0933333333
+    "phoneNumber": 933333333
 }
+
+### get all reservations
+GET http://localhost:3000/reservation
+
+### get one reservation / findById
+GET http://localhost:3000/reservation/65f30d558be189156059be22
+
+###patch one reservation / findByIdAndUpdate
+PATCH http://localhost:3000/reservation/65f30d558be189156059be22
+Content-Type: application/json
+
+{
+    "phoneNumber": 15
+}
+
+### delete one reservation / findByIdAndDelete
+DELETE http://localhost:3000/reservation/65f30e819fc5b2067d3588e1
+
+
+
